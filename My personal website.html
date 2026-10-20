@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurt Bocao | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+  <nav>
+    <a href="#home" class="logo">KB<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#skills">Skills</a>
+      <a href="#fun">Fun Fact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="tag">Welcome to my world ✦</div>
+        <h1>Hey, I'm<br><span>Kurt Bocao.</span></h1>
+        <p>
+          I'm an ICT student who enjoys playing games, listening
+          to music, and reading books. I value teamwork, problem
+          solving, and learning something new every day.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="#about">Discover More ↓</a>
+          <button class="btn secondary" id="helloBtn">
+            Click for a surprise ✨
+          </button>
+        </div>
+        <p id="helloMessage" class="message"></p>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">KB</div>
+        <div class="floating one">
+          Favorite genres
+          <strong>Action & Slice of Life 📚</strong>
+        </div>
+        <div class="floating two">
+          My mindset
+          <strong>Learn. Create. Improve.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2 class="section-title">A Little <span>About Me.</span></h2>
+      <p class="section-description">
+        Every day is another opportunity to learn something new.
+      </p>
+
+      <div class="about-grid">
+        <div class="quote">
+          <h3>
+            "I may not know everything, but I'm always willing to learn."
+          </h3>
+          <p>— Kurt Bocao</p>
+        </div>
+
+        <div class="facts">
+          <div class="fact">
+            <small>🎓 CURRENT ROLE</small>
+            <strong>BSIT Student</strong>
+          </div>
+          <div class="fact">
+            <small>🎮 HOBBY</small>
+            <strong>Playing Games</strong>
+          </div>
+          <div class="fact">
+            <small>🎧 ANOTHER HOBBY</small>
+            <strong>Listening to Music</strong>
+          </div>
+          <div class="fact">
+            <small>📚 FAVORITE GENRES</small>
+            <strong>Action & Slice of Life</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="reveal">
+      <h2 class="section-title">Things I <span>Enjoy.</span></h2>
+      <p class="section-description">
+        Here are some things I enjoy during my free time.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🎮</div>
+          <h3>Playing Games</h3>
+          <p>
+            I enjoy playing games for fun, relaxation, and the
+            challenge of improving my skills.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🎧</div>
+          <h3>Listening to Music</h3>
+          <p>
+            Music helps me relax, enjoy my free time, and
+            appreciate different sounds and moods.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📚</div>
+          <h3>Reading Books</h3>
+          <p>
+            I am interested in action and slice-of-life stories
+            that offer exciting adventures and relatable experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2 class="section-title">My <span>Skills.</span></h2>
+      <p class="section-description">
+        Skills I value when working with others and facing challenges.
+      </p>
+
+      <div class="skills">
+        <span class="skill">🤝 Teamwork</span>
+        <span class="skill">🧩 Problem Solving</span>
+      </div>
+    </section>
+
+    <section id="fun" class="reveal">
+      <div class="interactive">
+        <div class="tag">A little interaction</div>
+        <h2 class="section-title">Curious about <span>me?</span></h2>
+        <p class="section-description">
+          Click below to reveal a random thought!
+        </p>
+
+        <button class="btn primary" id="factBtn">
+          Reveal a Fun Fact ✨
+        </button>
+        <p id="fact" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Made with ❤️ using HTML, CSS & JavaScript</span>
+    <a href="#home">Back to Top ↑</a>
+    <span>© <span id="year"></span> Kurt Bocao</span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
