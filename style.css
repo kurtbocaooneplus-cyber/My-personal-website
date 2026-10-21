@@ -187,6 +187,9 @@ h1 span {
 .two {
   bottom: 30px;
   left: -10px;
+}
+
+.two {
   animation-delay: 1s;
 }
 
@@ -278,6 +281,75 @@ section {
   font-size: 14px;
 }
 
+/* STORYTELLING SECTION */
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.story-card {
+  background: linear-gradient(145deg, #192844, #151e35);
+  border: 1px solid #ffffff15;
+  border-radius: 18px;
+  padding: 25px;
+  transition: transform 0.3s, border-color 0.3s;
+  overflow-wrap: anywhere;
+}
+
+.story-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--lime);
+}
+
+.story-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.story-label {
+  display: block;
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.story-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.story-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.story-quote {
+  margin-top: 25px;
+  padding: 25px;
+  border-left: 4px solid var(--lime);
+  border-radius: 0 14px 14px 0;
+  background: #ffffff08;
+}
+
+.story-quote p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.story-quote span {
+  color: var(--lime);
+  font-size: 14px;
+}
+
+/* SKILLS */
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -297,6 +369,8 @@ section {
   color: #101522;
 }
 
+/* FUN FACT */
+
 .interactive {
   background: linear-gradient(120deg, #192844, #151e35);
   padding: 30px;
@@ -309,6 +383,8 @@ section {
   margin-top: 20px;
   min-height: 30px;
 }
+
+/* FOOTER */
 
 footer {
   border-top: 1px solid #ffffff15;
@@ -324,6 +400,8 @@ footer a {
   color: var(--lime);
 }
 
+/* SCROLL REVEAL */
+
 .reveal {
   opacity: 0;
   transform: translateY(25px);
@@ -335,6 +413,8 @@ footer a {
   transform: translateY(0);
 }
 
+/* FLOATING ANIMATION */
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -344,6 +424,8 @@ footer a {
     transform: translateY(-12px);
   }
 }
+
+/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 750px) {
   .nav-links {
@@ -384,7 +466,8 @@ footer a {
   }
 
   .about-grid,
-  .grid {
+  .grid,
+  .story-grid {
     grid-template-columns: 1fr;
   }
 
@@ -396,6 +479,8 @@ footer a {
     flex-direction: column;
   }
 }
+
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
   *,
