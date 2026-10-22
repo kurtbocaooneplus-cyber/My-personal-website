@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +17,7 @@
       <a href="#story">My Story</a>
       <a href="#interests">Interests</a>
       <a href="#skills">Skills</a>
+      <a href="#game">Game</a>
       <a href="#fun">Fun Fact</a>
     </div>
   </nav>
@@ -228,6 +228,26 @@
       <div class="skills">
         <span class="skill">🤝 Teamwork</span>
         <span class="skill">🧩 Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- MINI GAME -->
+    <section id="game" class="reveal">
+      <h2 class="section-title">Mini <span>Game.</span></h2>
+      <p class="section-description">
+        Match all the pairs using as few moves as you can!
+      </p>
+
+      <div class="game-box">
+        <div class="game-stats">
+          <span>Moves: <strong id="moves">0</strong></span>
+          <span>Matched: <strong id="matched">0</strong>/6</span>
+          <span>Best: <strong id="best">–</strong></span>
+          <button class="btn secondary" id="restartBtn">Restart ↻</button>
+        </div>
+
+        <div class="memory-grid" id="memoryGrid"></div>
+        <p id="gameMessage" class="message" aria-live="polite"></p>
       </div>
     </section>
 
